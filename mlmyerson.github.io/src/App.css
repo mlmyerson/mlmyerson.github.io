@@ -2,12 +2,10 @@
   min-height: 100vh;
   min-width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: minmax(auto, 100vh) auto auto; 
   grid-template-areas:
     "about portrait successes"
-    ". portrait ."
-    ". . ."
     ". . ."
     ". . ."
     "carousel carousel carousel";
@@ -16,9 +14,8 @@
 .about {
   grid-area: about;
   background-color: rgb(201, 82, 106);
-  width: 100%;
-  height: 100%;
   text-align: center;
+  height: 100%;
 }
 
 .portrait {
@@ -29,8 +26,6 @@
 }
 
 .portrait img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   /* This is key - maintains aspect ratio while filling */
   object-position: center;
@@ -42,8 +37,6 @@
 .successes {
   grid-area: successes;
   background-color: lightgreen;
-  width: 100%;
-  height: 100%;
   text-align: center;
 }
 
@@ -96,7 +89,7 @@
 }
 
 .site-text {
-  font-size: 1rem; /* Larger text */
+  font-size: 0.9rem; /* Larger text */
   text-align: center;
   margin: 0.5rem;
   font-family: 'Poppins', 'Verdana', sans-serif;
@@ -127,15 +120,6 @@
   color: #333;
 }
 
-.demo-button {
-  margin-top: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
 
 .repo-link {
   display: flex;
@@ -144,8 +128,4 @@
   margin-top: 10px;
   color: #0366d6;
   gap: 5px;
-}
-
-.github-icon {
-  fill: currentColor;
 }
