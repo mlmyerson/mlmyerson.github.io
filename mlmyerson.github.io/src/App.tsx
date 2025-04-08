@@ -179,28 +179,49 @@ function App() {
           <h2 className="section-title">Technical Skills</h2>
           <div className="skills-container">
             <div className="skill-category">
-              <h3>Frontend</h3>
+              <h3>Programming Languages</h3>
               <div className="skill-pills">
-                <span className="skill-pill">React</span>
                 <span className="skill-pill">JavaScript</span>
+                <span className="skill-pill">Python</span>
+                <span className="skill-pill">Go</span>
+                <span className="skill-pill">Java</span>
+                <span className="skill-pill">C/C++</span>
+                <span className="skill-pill">Bash</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>Frontend & UI</h3>
+              <div className="skill-pills">
+                <span className="skill-pill">React.js</span>
                 <span className="skill-pill">TypeScript</span>
+                <span className="skill-pill">JavaFX</span>
                 <span className="skill-pill">CSS/SASS</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Backend</h3>
+              <h3>Backend & Databases</h3>
               <div className="skill-pills">
                 <span className="skill-pill">Node.js</span>
-                <span className="skill-pill">Go</span>
-                <span className="skill-pill">Java</span>
-                <span className="skill-pill">Python</span>
+                <span className="skill-pill">PostgreSQL</span>
+                <span className="skill-pill">SQLite</span>
+                <span className="skill-pill">REST APIs</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>DevOps</h3>
+              <h3>Development Tools</h3>
+              <div className="skill-pills">
+                <span className="skill-pill">Git</span>
+                <span className="skill-pill">VS Code</span>
+                <span className="skill-pill">Vim</span>
+                <span className="skill-pill">Unity</span>
+              </div>
+            </div>
+            <div className="skill-category">
+              <h3>DevOps & Infrastructure</h3>
               <div className="skill-pills">
                 <span className="skill-pill">Docker</span>
                 <span className="skill-pill">Kubernetes</span>
+                <span className="skill-pill">Envoy</span>
                 <span className="skill-pill">CI/CD</span>
               </div>
             </div>
