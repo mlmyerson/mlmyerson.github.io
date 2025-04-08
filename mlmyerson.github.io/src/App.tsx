@@ -28,7 +28,7 @@ function App() {
     <>
       <div className='layout'>
         <div className='about'>
-          <h1>About Me</h1>
+          <h1 style={{textDecoration: "underline"}}>About Me</h1>
           <br/>
           <p className='site-text'>
             Hello, I'm Michael Myerson—a proud Floridian, Software Engineer, and Engineering Team Leader with over a decade of transforming complex challenges into elegant solutions. I'm passionate about building educational games, simulations, and innovative software that make complex ideas accessible and engaging. Whether I'm coding meticulously or orchestrating a team's vision, I thrive on creating technology that sparks connection and inspires growth.
@@ -48,8 +48,8 @@ function App() {
           <img src="/src/assets/Headshot.jpg" alt="React logo" className="portrait-img" />
         </div>
         <div className='successes'>
-          <h1>Successes</h1>
-          <h4>Revolutionizing Interfaces and Systems</h4>
+          <h1 style={{textDecoration: "underline"}}>Successes</h1>
+          <h2>Revolutionizing Interfaces and Systems</h2>
           <p className='site-text'>
             At the Naval Air Warfare Center Training Systems Division, I led the development of a sophisticated Java and JavaFX interface and an innovative REST API designed with Go and JavaScript. This work not only streamlined data integration but also shaved crucial milliseconds off system response times—an efficiency that proved vital in high-security environments.
           </p>
@@ -73,24 +73,34 @@ function App() {
         <div className='carousel'>
           <Carousel responsive={responsive}>
             <ProjectCard 
-              title="Card 1" 
+              title="Real-Time Chat Application" 
               imageUrl="/src/assets/react.svg" 
-              description="Description of project 1" 
+              description="A full-stack chat application with real-time messaging, user authentication, and chat rooms. Features include message encryption and file sharing." 
+              repoUrl="https://github.com/mlmyerson/chat-app"
+              technologies={["React", "Socket.io", "Express", "MongoDB"]}
+              demoUrl="https://chat-app-demo.netlify.app"
             />
             <ProjectCard 
-              title="Card 2" 
+              title="Algorithmic Trading Bot" 
               imageUrl="/src/assets/react.svg" 
-              description="Description of project 2" 
+              description="An automated trading system that uses machine learning to analyze market patterns and execute trades with custom risk management strategies." 
+              repoUrl="https://github.com/mlmyerson/algo-trader"
+              technologies={["Python", "TensorFlow", "pandas", "Alpha Vantage API"]}
             />
             <ProjectCard 
-              title="Card 3" 
+              title="AR Museum Guide" 
               imageUrl="/src/assets/react.svg" 
-              description="Description of project 3" 
+              description="Mobile application that enhances museum visits by providing interactive AR experiences when visitors scan exhibits." 
+              repoUrl="https://github.com/mlmyerson/ar-museum"
+              technologies={["Unity", "ARKit", "C#", "Firebase"]}
+              demoUrl="https://ar-museum-demo.io"
             />
             <ProjectCard 
-              title="Card 4" 
+              title="Distributed Database System" 
               imageUrl="/src/assets/react.svg" 
-              description="Description of project 4" 
+              description="A high-performance distributed database system with automatic sharding and replication capabilities for fault tolerance and horizontal scaling." 
+              repoUrl="https://github.com/mlmyerson/distributed-db"
+              technologies={["Go", "Docker", "Kubernetes", "Envoy"]}
             />
           </Carousel>
         </div>
