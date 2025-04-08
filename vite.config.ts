@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/mlmyerson.github.io/',
+  base: '/',  // For username.github.io repos, use '/'
 })
