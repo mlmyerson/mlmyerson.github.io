@@ -6,8 +6,10 @@
   grid-template-rows: auto auto auto;
   grid-template-areas:
     "about portrait successes"
+    ". portrait ."
+    ". portrait ."
+    ". portrait ."
     ". . ."
-    "carousel carousel carousel"
     "carousel carousel carousel";
 }
 

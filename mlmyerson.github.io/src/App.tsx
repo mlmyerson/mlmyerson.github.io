@@ -32,7 +32,7 @@ function App() {
           <h1>About Me</h1>
         </div>
         <div className='portrait'>
-          <h1>Portrait</h1>
+          <img src="/src/assets/Headshot.jpg" alt="React logo" className="card-image" />
         </div>
         <div className='successes'>
           <h1>Successes</h1>
