@@ -1,7 +1,7 @@
 body {
   margin: 5px;
   display: flex;
-  justify-content: center; /* Center the layout in the page */
+  justify-content: center;
   background-color: rgb(153, 153, 226);
 }
 
@@ -28,18 +28,14 @@ body {
 
 .portrait {
   grid-area: portrait;
-  /* Add this to ensure the div itself can act as a container */
   position: relative;
   overflow: hidden;
 }
 
 .portrait img {
   object-fit: cover;
-  /* This is key - maintains aspect ratio while filling */
   object-position: center;
-  /* Centers the image */
   display: block;
-  /* Removes any extra spacing */
 }
 
 .successes {
@@ -55,17 +51,15 @@ body {
   height: 100%;
 }
 
-/* Make sure the carousel's flex container fills available height */
+
 .carousel .react-multi-carousel-item {
   display: flex;
   align-items: stretch;
   justify-content: center;
   height: 100%;
-  /* Ensure the flex container has full height */
   width: 100%;
 }
 
-/* Make the wrapper fill and use flex to stretch its content vertically */
 .carousel-card {
   flex: 1 1 auto;
   display: flex;
@@ -82,12 +76,12 @@ body {
 }
 
 .card-image {
-  width: 100%;
+  width: 75%; 
   height: auto;
-  max-height: 50vh;
-  /* Set a max height for the image */
+  max-height: 37.5vh;
   object-fit: cover;
-  /* Ensure the image covers the area without distortion */
+  display: block;
+  margin: 0 auto; 
 }
 
 .card-description {
@@ -97,7 +91,7 @@ body {
 }
 
 .site-text {
-  font-size: 0.9rem; /* Larger text */
+  font-size: 0.9rem;
   text-align: center;
   margin: 0.5rem;
   font-family: 'Poppins', 'Verdana', sans-serif;
