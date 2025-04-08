@@ -169,7 +169,7 @@ function App() {
                 description="EyeWitness is a minimalist Progressive Web App that allows witnesses to quickly record, save, and share video evidence from any device with a camera and web browser. Built with accessibility and reliability in mind, it works across a wide range of devices and network conditions."
                 repoUrl="https://github.com/mlmyerson/EyeWitness"
                 technologies={["Javascript", "HTML", "CSS", "Python", "Docker"]}
-                demoUrl="eye.newrosesociety.com"
+                demoUrl="https://eye.newrosesociety.com"
               />
               <ProjectCard
                 title="Algorithmic Trading Bot"

@@ -22,6 +22,7 @@ function ProjectCard({ title, imageUrl, description, repoUrl, technologies, demo
 
   const handleRepoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
+    e.stopPropagation(); // Prevent the card click event from triggering
     window.open(repoUrl, '_blank');
   };
 
@@ -33,7 +34,8 @@ function ProjectCard({ title, imageUrl, description, repoUrl, technologies, demo
         onClick={handleClick}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className={`project-card ${isHovered ? 'hovered' : ''}`}
+        className={`project-card ${isHovered ? 'hovered' : ''} ${demoUrl ? 'clickable' : ''}`}
+        style={{ cursor: demoUrl ? 'pointer' : 'default' }}
       >
         <CardContent>
           <div className='card-title'>
