@@ -189,7 +189,7 @@ function App() {
               />
               <ProjectCard
                 title="Gnome Key Binder"
-                imageUrl="/src/assets/react.svg"
+                imageUrl="/src/assets/Gnome Foot.png"
                 description="A high-performance distributed database system with automatic sharding and replication capabilities for fault tolerance and horizontal scaling."
                 repoUrl="https://github.com/mlmyerson/GnomeKeyBinder"
                 technologies={["C++", "Bash", "CMake"]}
