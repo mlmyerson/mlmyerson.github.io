@@ -99,18 +99,28 @@ function App() {
           <h2 className="section-title">Professional Journey</h2>
           <div className="timeline">
             <TimelineItem 
-              icon="🏢"
-              title="Naval Air Warfare Center"
-              description="Led development of Java/JavaFX interface and REST API with Go and JavaScript, enhancing system response times in high-security environments."
+              icon="🐳"
+              title="Installable CDS System"
+              description="Developed a containerized deployment system using Docker, CMake, and Bash, reducing installation complexity. Integrated C++ and Lua for multi-layered, scriptable system configuration. Increased test coverage by 30% through automated testing."
+            />
+            <TimelineItem 
+              icon="🗃️"
+              title="Distributed Database with RAFT Consensus"
+              description="Built a fault-tolerant distributed database using Go and RAFT consensus to ensure consistency and availability. Designed efficient data replication mechanisms and implemented load-balancing strategies to optimize write throughput."
             />
             <TimelineItem 
               icon="🌐"
-              title="Distributed Systems Architect"
-              description="Architected container networks using Docker and Envoy to deploy 16+ distributed database systems with enhanced reliability and operational robustness."
+              title="Embedded System Management Site"
+              description="Developed a web-based control panel for managing embedded systems using Node.js and React. Implemented a RESTful API for real-time device monitoring, configuration, and diagnostics. Optimized site load speed and UI design."
+            />
+            <TimelineItem 
+              icon="🖥️"
+              title="GUI for a Cross-Domain Guard"
+              description="Designed and maintained a secure graphical interface for a cross-domain guard in a high-assurance environment. Migrated legacy Java Swing applications to JavaFX, improving maintainability and performance. Developed a generative UI for visualizing hierarchical security constraints."
             />
             <TimelineItem 
               icon="👨‍💼"
-              title="Production Manager at E2i Studios"
+              title="Production Manager"
               description="Coordinated diverse teams, negotiating and delivering a multi-million-dollar contract with the University of Central Florida."
             />
             <TimelineItem 
