@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "18"
           
@@ -42,12 +42,12 @@ jobs:
         uses: actions/configure-pages@v4
         
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
           
       - name: Ensure Upload Artifact is Available
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: debug-artifact
           path: dist
@@ -61,4 +61,4 @@ jobs:
           
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v3
