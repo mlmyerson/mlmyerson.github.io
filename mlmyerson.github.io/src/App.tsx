@@ -172,12 +172,16 @@ function App() {
                 demoUrl="https://eye.newrosesociety.com"
               />
               <ProjectCard
-                title="Algorithmic Trading Bot"
-                imageUrl="/src/assets/react.svg"
-                description="An automated trading system that uses machine learning to analyze market patterns and execute trades with custom risk management strategies."
-                repoUrl="https://github.com/mlmyerson/algo-trader"
-                technologies={["Python", "TensorFlow", "pandas", "Alpha Vantage API"]}
+                title="CA-Research"
+                imageUrl="/src/assets/CA Research.png"
+                description="Dive into the mesmerizing world of Elementary Cellular Automata (ECAs), where simple rules ignite dazzling patterns. Experiment with binary states or explore “Rule Index” mode to uncover deeper structural rhythms."
+                repoUrl="https://github.com/mlmyerson/CA-Research"
+                technologies={["Javascript", "HTML", "CSS"]}
+                demoUrl='https://mlmyerson.github.io/CA-Research/'
               />
+
+
+
               <ProjectCard
                 title="AR Museum Guide"
                 imageUrl="/src/assets/react.svg"
