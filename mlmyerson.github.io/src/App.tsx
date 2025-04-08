@@ -164,12 +164,12 @@ function App() {
               containerClass="carousel-container"
             >
               <ProjectCard
-                title="Real-Time Chat Application"
-                imageUrl="/src/assets/react.svg"
-                description="A full-stack chat application with real-time messaging, user authentication, and chat rooms."
-                repoUrl="https://github.com/mlmyerson/chat-app"
-                technologies={["React", "Socket.io", "Express", "MongoDB"]}
-                demoUrl="https://chat-app-demo.netlify.app"
+                title="EyeWitness"
+                imageUrl="/src/assets/EyeWitness Screenshot.png"
+                description="EyeWitness is a minimalist Progressive Web App that allows witnesses to quickly record, save, and share video evidence from any device with a camera and web browser. Built with accessibility and reliability in mind, it works across a wide range of devices and network conditions."
+                repoUrl="https://github.com/mlmyerson/EyeWitness"
+                technologies={["Javascript", "HTML", "CSS", "Python", "Docker"]}
+                demoUrl="eye.newrosesociety.com"
               />
               <ProjectCard
                 title="Algorithmic Trading Bot"
