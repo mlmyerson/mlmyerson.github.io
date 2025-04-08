@@ -1,0 +1,79 @@
+.projects-section {
+  background: white;
+}
+
+.carousel-container {
+  padding: 2rem 0;
+}
+
+.carousel .react-multi-carousel-item {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-card {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.project-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+}
+
+.project-card.hovered {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-image {
+  width: 75%; 
+  height: auto;
+  max-height: 37.5vh;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; 
+}
+
+.card-description {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.card-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.tech-badge {
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.repo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  color: #0366d6;
+  gap: 5px;
+}

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
-import './App.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import ProjectCard from './components/ProjectCard';
 import { motion } from 'framer-motion';
 import TimelineItem from './components/TimelineItem';
+import './styles/index.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
