@@ -46,6 +46,19 @@ jobs:
         with:
           path: dist
           
+      - name: Ensure Upload Artifact is Available
+        uses: actions/upload-artifact@v3
+        with:
+          name: debug-artifact
+          path: dist
+
+      - name: Debug Environment
+        run: |
+          echo "Node version: $(node -v)"
+          echo "NPM version: $(npm -v)"
+          echo "Installed Actions:"
+          ls -R ./.github/actions
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
