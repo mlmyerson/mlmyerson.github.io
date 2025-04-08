@@ -168,7 +168,7 @@ function App() {
                 imageUrl="/src/assets/EyeWitness Screenshot.png"
                 description="EyeWitness is a minimalist Progressive Web App that allows witnesses to quickly record, save, and share video evidence from any device with a camera and web browser. Built with accessibility and reliability in mind, it works across a wide range of devices and network conditions."
                 repoUrl="https://github.com/mlmyerson/EyeWitness"
-                technologies={["Javascript", "HTML", "CSS", "Python", "Docker"]}
+                technologies={["JavaScript", "HTML", "CSS", "Python", "Docker"]}
                 demoUrl="https://eye.newrosesociety.com"
               />
               <ProjectCard
@@ -176,26 +176,24 @@ function App() {
                 imageUrl="/src/assets/CA Research.png"
                 description="Dive into the mesmerizing world of Elementary Cellular Automata (ECAs), where simple rules ignite dazzling patterns. Experiment with binary states or explore “Rule Index” mode to uncover deeper structural rhythms."
                 repoUrl="https://github.com/mlmyerson/CA-Research"
-                technologies={["Javascript", "HTML", "CSS"]}
+                technologies={["JavaScript", "HTML", "CSS"]}
                 demoUrl='https://mlmyerson.github.io/CA-Research/'
               />
-
-
-
               <ProjectCard
-                title="AR Museum Guide"
-                imageUrl="/src/assets/react.svg"
-                description="Mobile application that enhances museum visits by providing interactive AR experiences when visitors scan exhibits."
-                repoUrl="https://github.com/mlmyerson/ar-museum"
-                technologies={["Unity", "ARKit", "C#", "Firebase"]}
-                demoUrl="https://ar-museum-demo.io"
+                title="Color Economy"
+                imageUrl="/src/assets/ColorEconomy.png"
+                description="In ColorEconomy, a dynamic ecosystem unfolds as tessellated patches support life. Creatures emerge as either herbivores or predators."
+                repoUrl="https://github.com/newrosesociety/ColorEconomy"
+                technologies={["JavaScript", "HTML", "CSS"]}
+                demoUrl="https://newrosesociety.github.io/ColorEconomy/"
               />
               <ProjectCard
-                title="Distributed Database System"
+                title="Gnome Key Binder"
                 imageUrl="/src/assets/react.svg"
                 description="A high-performance distributed database system with automatic sharding and replication capabilities for fault tolerance and horizontal scaling."
-                repoUrl="https://github.com/mlmyerson/distributed-db"
-                technologies={["Go", "Docker", "Kubernetes", "Envoy"]}
+                repoUrl="https://github.com/mlmyerson/GnomeKeyBinder"
+                technologies={["C++", "Bash", "CMake"]}
+                demoUrl="https://github.com/mlmyerson/GnomeKeyBinder"
               />
             </Carousel>
           </div>
