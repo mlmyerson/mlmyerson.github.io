@@ -4,6 +4,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import ProjectCard from './components/ProjectCard';
 import { motion } from 'framer-motion';
+import TimelineItem from './components/TimelineItem';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -97,34 +98,26 @@ function App() {
         <section className="timeline-section">
           <h2 className="section-title">Professional Journey</h2>
           <div className="timeline">
-            <div className="timeline-item">
-              <div className="timeline-icon">🏢</div>
-              <div className="timeline-content">
-                <h3>Naval Air Warfare Center</h3>
-                <p className="site-text">Led development of Java/JavaFX interface and REST API with Go and JavaScript, enhancing system response times in high-security environments.</p>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-icon">🌐</div>
-              <div className="timeline-content">
-                <h3>Distributed Systems Architect</h3>
-                <p className="site-text">Architected container networks using Docker and Envoy to deploy 16+ distributed database systems with enhanced reliability and operational robustness.</p>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-icon">👨‍💼</div>
-              <div className="timeline-content">
-                <h3>Production Manager at E2i Studios</h3>
-                <p className="site-text">Coordinated diverse teams, negotiating and delivering a multi-million-dollar contract with the University of Central Florida.</p>
-              </div>
-            </div>
-            <div className="timeline-item">
-              <div className="timeline-icon">🎖️</div>
-              <div className="timeline-content">
-                <h3>US Army Infantry Soldier</h3>
-                <p className="site-text">Maintained critical communications during intense operations, trained team members, and was honored with the Army Achievement Medal.</p>
-              </div>
-            </div>
+            <TimelineItem 
+              icon="🏢"
+              title="Naval Air Warfare Center"
+              description="Led development of Java/JavaFX interface and REST API with Go and JavaScript, enhancing system response times in high-security environments."
+            />
+            <TimelineItem 
+              icon="🌐"
+              title="Distributed Systems Architect"
+              description="Architected container networks using Docker and Envoy to deploy 16+ distributed database systems with enhanced reliability and operational robustness."
+            />
+            <TimelineItem 
+              icon="👨‍💼"
+              title="Production Manager at E2i Studios"
+              description="Coordinated diverse teams, negotiating and delivering a multi-million-dollar contract with the University of Central Florida."
+            />
+            <TimelineItem 
+              icon="🎖️"
+              title="US Army Infantry Soldier"
+              description="Maintained critical communications during intense operations, trained team members, and was honored with the Army Achievement Medal."
+            />
           </div>
         </section>
 
