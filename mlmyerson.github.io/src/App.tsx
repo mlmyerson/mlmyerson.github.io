@@ -1,8 +1,7 @@
 import './App.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
+import ProjectCard from './components/ProjectCard.tsx';
 
 function App() {
   const responsive = {
@@ -73,58 +72,26 @@ function App() {
         </div>
         <div className='carousel'>
           <Carousel responsive={responsive}>
-            <div className="carousel-card">
-              <Card variant="outlined" raised={true}>
-                <CardContent>
-                  <div className='card-title'>
-                    Card 1
-                  </div>
-                  <img src="/src/assets/react.svg" alt="React logo" className="card-image" />
-                  <div className='card-description'>
-                    Description
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="carousel-card">
-              <Card variant="outlined" raised={true}>
-                <CardContent>
-                  <div className='card-title'>
-                    Card 2
-                  </div>
-                  <img src="/src/assets/react.svg" alt="React logo" className="card-image" />
-                  <div className='card-description'>
-                    Description
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="carousel-card">
-              <Card variant="outlined" raised={true}>
-                <CardContent>
-                  <div className='card-title'>
-                    Card 3
-                  </div>
-                  <img src="/src/assets/react.svg" alt="React logo" className="card-image" />
-                  <div className='card-description'>
-                    Description
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="carousel-card">
-              <Card variant="outlined" raised={true}>
-                <CardContent>
-                  <div className='card-title'>
-                    Card 4
-                  </div>
-                  <img src="/src/assets/react.svg" alt="React logo" className="card-image" />
-                  <div className='card-description'>
-                    Description
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+            <ProjectCard 
+              title="Card 1" 
+              imageUrl="/src/assets/react.svg" 
+              description="Description of project 1" 
+            />
+            <ProjectCard 
+              title="Card 2" 
+              imageUrl="/src/assets/react.svg" 
+              description="Description of project 2" 
+            />
+            <ProjectCard 
+              title="Card 3" 
+              imageUrl="/src/assets/react.svg" 
+              description="Description of project 3" 
+            />
+            <ProjectCard 
+              title="Card 4" 
+              imageUrl="/src/assets/react.svg" 
+              description="Description of project 4" 
+            />
           </Carousel>
         </div>
       </div>
