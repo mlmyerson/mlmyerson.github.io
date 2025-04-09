@@ -9,8 +9,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build && mkdir -p build && touch build/.nojekyll",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build && mkdir -p dist && touch dist/.nojekyll",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
