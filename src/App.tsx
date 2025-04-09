@@ -6,6 +6,13 @@ import { motion } from 'framer-motion';
 import TimelineItem from './components/TimelineItem';
 import './styles/index.css';
 
+// Update image imports to use consistent paths
+import CaResearch from './assets/CA Research.png';
+import EyeWitness from './assets/EyeWitness Screenshot.png';
+import ColorEconomy from './assets/ColorEconomy.png';
+import GnomeKeyBinder from './assets/Gnome Foot.png';
+import HeadShot from './assets/Headshot.jpg';
+
 function App() {
   const [activeSection, setActiveSection] = useState('home');
   const aboutRef = useRef<HTMLElement>(null);
@@ -111,7 +118,7 @@ function App() {
               </div>
               <div className="portrait-container">
                 <div className="portrait-frame">
-                  <img src="/src/assets/Headshot.jpg" alt="Michael Myerson" className="portrait-img" />
+                  <img src={HeadShot} alt="Michael Myerson" className="portrait-img" />
                 </div>
               </div>
             </motion.div>
@@ -166,7 +173,7 @@ function App() {
             >
               <ProjectCard
                 title="EyeWitness"
-                imageUrl="./src/assets/EyeWitness Screenshot.png"
+                imageUrl={EyeWitness}
                 description="EyeWitness is a minimalist Progressive Web App that allows witnesses to quickly record, save, and share video evidence from any device with a camera and web browser. Built with accessibility and reliability in mind, it works across a wide range of devices and network conditions."
                 repoUrl="https://github.com/mlmyerson/EyeWitness"
                 technologies={["JavaScript", "HTML", "CSS", "Python", "Docker"]}
@@ -174,7 +181,7 @@ function App() {
               />
               <ProjectCard
                 title="CA-Research"
-                imageUrl="./src/assets/CA Research.png"
+                imageUrl={CaResearch}
                 description="Dive into the mesmerizing world of Elementary Cellular Automata (ECAs), where simple rules ignite dazzling patterns. Experiment with binary states or explore “Rule Index” mode to uncover deeper structural rhythms."
                 repoUrl="https://github.com/mlmyerson/CA-Research"
                 technologies={["JavaScript", "HTML", "CSS"]}
@@ -182,7 +189,7 @@ function App() {
               />
               <ProjectCard
                 title="Color Economy"
-                imageUrl="./src/assets/ColorEconomy.png"
+                imageUrl={ColorEconomy}
                 description="In ColorEconomy, a dynamic ecosystem unfolds as tessellated patches support life. Creatures emerge as either herbivores or predators."
                 repoUrl="https://github.com/newrosesociety/ColorEconomy"
                 technologies={["JavaScript", "HTML", "CSS"]}
@@ -190,7 +197,7 @@ function App() {
               />
               <ProjectCard
                 title="Gnome Key Binder"
-                imageUrl="./src/assets/Gnome Foot.png"
+                imageUrl={GnomeKeyBinder}
                 description="A high-performance distributed database system with automatic sharding and replication capabilities for fault tolerance and horizontal scaling."
                 repoUrl="https://github.com/mlmyerson/GnomeKeyBinder"
                 technologies={["C++", "Bash", "CMake"]}
