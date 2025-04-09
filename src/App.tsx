@@ -6,12 +6,13 @@ import { motion } from 'framer-motion';
 import TimelineItem from './components/TimelineItem';
 import './styles/index.css';
 
-// Update image imports to use consistent paths
-import CaResearch from './assets/CA Research.png';
-import EyeWitness from './assets/EyeWitness Screenshot.png';
-import ColorEconomy from './assets/ColorEconomy.png';
-import GnomeKeyBinder from './assets/Gnome Foot.png';
-import HeadShot from './assets/Headshot.jpg';
+// Remove the direct imports
+// Instead use constants for our image paths
+const CaResearch = './images/CA Research.png';
+const EyeWitness = './images/EyeWitness Screenshot.png';
+const ColorEconomy = './images/ColorEconomy.png';
+const GnomeKeyBinder = './images/Gnome Foot.png';
+const HeadShot = './images/Headshot.jpg';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
