@@ -10,7 +10,7 @@ description: >-
 url: "https://mlmyerson.github.io"
 baseurl: ""
 repository: mlmyerson/mlmyerson.github.io
-search: true
+search: false
 
 author:
   name: Michael Myerson

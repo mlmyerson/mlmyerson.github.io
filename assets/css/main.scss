@@ -43,14 +43,33 @@ search: false
   }
 }
 
-// Let long sidebar text show in full instead of scrolling in a clipped box.
+// Sidebar note: scrolls with the page rather than following the viewport.
+@include breakpoint($large) {
+  .sidebar.sticky {
+    position: static;
+    overflow-y: visible;
+    max-height: none;
+  }
+}
+
 .sidebar.sticky {
-  overflow-y: visible;
-  max-height: none;
+  h3 {
+    margin: 1.25em 0 0.75em;
+    font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #4ec9b0;
+  }
 
   p {
-    font-size: 0.8em;
-    line-height: 1.6;
+    margin: 0;
+    padding-left: 1em;
+    border-left: 2px solid #4ec9b0;
+    font-size: 0.72em;
+    line-height: 1.65;
+    color: $text-color;
   }
 }
 
