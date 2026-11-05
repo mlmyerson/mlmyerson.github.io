@@ -1,0 +1,128 @@
+---
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// Animated swirl background (see assets/js/background-swirls.js).
+#swirl-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+// Let the canvas show through the theme's opaque surfaces.
+body,
+.masthead,
+.initial-content,
+.page__footer,
+.sidebar,
+.author__urls.social-icons {
+  background-color: transparent;
+}
+
+// Project grid: responsive cards with uniform image crops.
+.entries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem 1.75rem;
+  float: none;
+  width: 100%;
+
+  .grid__item {
+    float: none;
+    width: auto;
+    margin: 0;
+    clear: none;
+  }
+
+  .archive__item-teaser {
+    border-radius: 6px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      transition: transform 0.25s ease;
+    }
+  }
+
+  .archive__item:hover .archive__item-teaser img {
+    transform: scale(1.04);
+  }
+
+  .archive__item-title {
+    margin-top: 0.75em;
+  }
+}
+
+// Sidebar note: scrolls with the page rather than following the viewport.
+@include breakpoint($large) {
+  .sidebar.sticky {
+    position: static;
+    overflow-y: visible;
+    max-height: none;
+  }
+}
+
+.sidebar.sticky {
+  h3 {
+    margin: 1.25em 0 0.75em;
+    font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #4ec9b0;
+  }
+
+  p {
+    margin: 0;
+    padding-left: 1em;
+    border-left: 2px solid #4ec9b0;
+    font-size: 0.72em;
+    line-height: 1.65;
+    color: $text-color;
+  }
+}
+
+// Experience page: employer headings with role and stack lines.
+.page__content {
+  .role {
+    margin: -0.4em 0 0.2em;
+    color: $muted-text-color;
+  }
+
+  .stack {
+    margin: 0 0 0.8em;
+    font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.75em;
+    color: #4ec9b0;
+  }
+}
+
+// Masthead wordmark: a code-flavored mark in place of a logo image.
+.masthead .site-title {
+  font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+
+  &::before {
+    content: "<";
+    color: #4ec9b0;
+    margin-right: 0.35em;
+  }
+
+  &::after {
+    content: "/>";
+    color: #4ec9b0;
+    margin-left: 0.35em;
+  }
+}
