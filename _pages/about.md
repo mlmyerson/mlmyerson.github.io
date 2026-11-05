@@ -4,9 +4,9 @@ permalink: /about/
 author_profile: true
 ---
 
-Hello, I'm Michael Myerson: a proud Floridian, software engineer, and engineering team leader with over a decade of turning complex challenges into elegant solutions. I'm passionate about educational games, simulations, and software that makes complex ideas accessible and engaging.
+I love computers. One of the proudest accomplishments of my career has been the opportunity to work across so many different areas of technology. I'm comfortable with a broad range of software development practices and feel particularly at home in projects that reward curiosity, independent learning, and creative problem-solving.
 
-My journey has taken me from robust back-end systems to intuitive user interfaces, always with an eye on long-term impact and meaningful collaboration.
+One of my growing interests is the application of generative AI to developer productivity. I'm fascinated by how software verification, automated testing, and agentic development workflows can work together to establish greater confidence in the systems we build. I particularly enjoy modeling, probing, and experimenting with software to better understand its properties, behavior, and limitations.
 
 ## Toolbox
 

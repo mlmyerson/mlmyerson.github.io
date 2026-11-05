@@ -8,9 +8,9 @@ header:
   actions:
     - label: "See the projects"
       url: "/projects/"
-excerpt: "Software engineer & team leader. I build games, simulations, and systems software that make complex ideas tangible."
+excerpt: "Software engineer & team leader. I love computers, and I'm most at home where curiosity and creative problem-solving pay off."
 intro:
-  - excerpt: "Evolutionary algorithms, sonified chaos, game-playing agents, and humanitarian software: a decade of building things that spark connection."
+  - excerpt: "Generative AI for developer productivity, software verification, and experiments that model and probe how systems behave."
 ---
 
 {% include feature_row id="intro" type="center" %}

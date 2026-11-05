@@ -5,8 +5,8 @@ title: Michael Myerson
 title_separator: "-"
 name: Michael Myerson
 description: >-
-  Software engineer and team leader building games, simulations, and
-  systems software that make complex ideas tangible.
+  Software engineer and team leader with a broad range of experience, curious
+  about generative AI, verification, and how software behaves.
 url: "https://mlmyerson.github.io"
 baseurl: ""
 repository: mlmyerson/mlmyerson.github.io
@@ -16,8 +16,8 @@ author:
   name: Michael Myerson
   avatar: /assets/images/headshot.jpg
   bio: >-
-    Software engineer and engineering team leader. Educational games,
-    simulations, and systems software.
+    Software engineer and team leader. I love computers and building
+    things that reward curiosity.
   location: Florida, USA
   links:
     - label: GitHub

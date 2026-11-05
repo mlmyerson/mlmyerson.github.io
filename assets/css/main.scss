@@ -10,7 +10,7 @@ search: false
 // Project grid: responsive cards with uniform image crops.
 .entries-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 2rem 1.75rem;
   float: none;
   width: 100%;
@@ -40,6 +40,32 @@ search: false
 
   .archive__item-title {
     margin-top: 0.75em;
+  }
+}
+
+// Let long sidebar text show in full instead of scrolling in a clipped box.
+.sidebar.sticky {
+  overflow-y: visible;
+  max-height: none;
+
+  p {
+    font-size: 0.8em;
+    line-height: 1.6;
+  }
+}
+
+// Experience page: employer headings with role and stack lines.
+.page__content {
+  .role {
+    margin: -0.4em 0 0.2em;
+    color: $muted-text-color;
+  }
+
+  .stack {
+    margin: 0 0 0.8em;
+    font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.75em;
+    color: #4ec9b0;
   }
 }
 
