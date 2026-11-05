@@ -7,6 +7,26 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+// Animated swirl background (see assets/js/background-swirls.js).
+#swirl-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+// Let the canvas show through the theme's opaque surfaces.
+body,
+.masthead,
+.initial-content,
+.page__footer,
+.sidebar,
+.author__urls.social-icons {
+  background-color: transparent;
+}
+
 // Project grid: responsive cards with uniform image crops.
 .entries-grid {
   display: grid;
