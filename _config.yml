@@ -1,0 +1,73 @@
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: dark
+locale: en-US
+title: Michael Myerson
+title_separator: "-"
+name: Michael Myerson
+description: >-
+  Software engineer and team leader building games, simulations, and
+  systems software that make complex ideas tangible.
+url: "https://mlmyerson.github.io"
+baseurl: ""
+repository: mlmyerson/mlmyerson.github.io
+logo: /assets/images/favicon.png
+search: true
+
+author:
+  name: Michael Myerson
+  avatar: /assets/images/headshot.jpg
+  bio: >-
+    Software engineer and engineering team leader. Educational games,
+    simulations, and systems software.
+  location: Florida, USA
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/mlmyerson
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/michaelmyerson/
+
+footer:
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/mlmyerson
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/michaelmyerson/
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+timezone: America/New_York
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+include:
+  - _pages
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      toc: false
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
