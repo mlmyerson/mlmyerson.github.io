@@ -1,6 +1,6 @@
 ---
 title: "EyeWitness"
-order: 3
+order: 1
 excerpt: "A minimalist PWA for recording, saving, and sharing video evidence."
 header:
   teaser: /assets/images/eyewitness.png

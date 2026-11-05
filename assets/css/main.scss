@@ -1,0 +1,63 @@
+---
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// Project grid: responsive cards with uniform image crops.
+.entries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem 1.75rem;
+  float: none;
+  width: 100%;
+
+  .grid__item {
+    float: none;
+    width: auto;
+    margin: 0;
+    clear: none;
+  }
+
+  .archive__item-teaser {
+    border-radius: 6px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      transition: transform 0.25s ease;
+    }
+  }
+
+  .archive__item:hover .archive__item-teaser img {
+    transform: scale(1.04);
+  }
+
+  .archive__item-title {
+    margin-top: 0.75em;
+  }
+}
+
+// Masthead wordmark: a code-flavored mark in place of a logo image.
+.masthead .site-title {
+  font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+
+  &::before {
+    content: "<";
+    color: #4ec9b0;
+    margin-right: 0.35em;
+  }
+
+  &::after {
+    content: "/>";
+    color: #4ec9b0;
+    margin-left: 0.35em;
+  }
+}

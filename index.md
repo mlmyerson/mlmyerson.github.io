@@ -10,11 +10,16 @@ header:
       url: "/projects/"
 excerpt: "Software engineer & team leader. I build games, simulations, and systems software that make complex ideas tangible."
 intro:
-  - excerpt: "Cellular automata, artificial ecosystems, evidence-capturing PWAs, and distributed systems: a decade of building things that spark connection."
+  - excerpt: "Evolutionary algorithms, sonified chaos, game-playing agents, and humanitarian software: a decade of building things that spark connection."
 ---
 
 {% include feature_row id="intro" type="center" %}
 
 ## Featured work
 
-{% include documents-collection.html collection="projects" sort_by="order" sort_order="forward" type="grid" entries_layout="grid" %}
+<div class="entries-grid">
+{% assign projects = site.projects | sort: "order" %}
+{% for post in projects %}
+  {% include archive-single.html type="grid" %}
+{% endfor %}
+</div>
