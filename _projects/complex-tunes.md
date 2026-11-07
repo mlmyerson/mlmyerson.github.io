@@ -2,6 +2,8 @@
 title: "Complex Tunes"
 order: 4
 excerpt: "A browser instrument linking music and chaos: audio as 3D orbits, Lorenz as sound."
+layout: redirect
+redirect_url: https://mlmyerson.github.io/complex-tunes/
 header:
   teaser: /assets/images/complex-tunes.png
   image: /assets/images/complex-tunes.png

@@ -1,0 +1,12 @@
+{% if page.redirect_url contains "://" %}{% assign target = page.redirect_url %}{% else %}{% assign target = page.redirect_url | relative_url %}{% endif %}<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{{ target }}">
+  <meta http-equiv="refresh" content="0; url={{ target }}">
+  <script>location.replace("{{ target }}");</script>
+</head>
+<body><p>Redirecting to <a href="{{ target }}">{{ page.title }}</a>&hellip;</p></body>
+</html>

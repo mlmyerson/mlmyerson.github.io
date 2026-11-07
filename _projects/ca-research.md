@@ -2,6 +2,8 @@
 title: "CA-Research"
 order: 2
 excerpt: "An explorer for elementary cellular automata, with regex pattern highlighting."
+layout: redirect
+redirect_url: https://mlmyerson.github.io/CA-Research/
 header:
   teaser: /assets/images/ca-research.png
   image: /assets/images/ca-research.png

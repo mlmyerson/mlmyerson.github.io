@@ -2,6 +2,8 @@
 title: "Arcfield"
 order: 3
 excerpt: "A tile-and-particle evolution lab where a genetic algorithm breeds curved-tile layouts."
+layout: redirect
+redirect_url: https://mlmyerson.github.io/arcfield/
 header:
   teaser: /assets/images/arcfield.png
   image: /assets/images/arcfield.png
