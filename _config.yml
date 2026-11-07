@@ -11,6 +11,8 @@ url: "https://mlmyerson.github.io"
 baseurl: ""
 repository: mlmyerson/mlmyerson.github.io
 search: false
+atom_feed:
+  hide: true
 
 author:
   name: Michael Myerson
